@@ -1,4 +1,4 @@
-
 CookBook yPBL
+=============
 
-An Ext JS example of sencha architect
+An Ext JS Example written with Sencha Architect
