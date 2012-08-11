@@ -1,0 +1,47 @@
+[
+    {
+        id: 1,
+        title: "Cookbook 1",
+        dateCreation: "2012-07-09",
+        description: "Bla Bla Bla...",
+        rating_img_url_small: 5,
+        feedback: [
+            {
+                title: "Titulo feedback",
+                comment: "This cookbook...",
+		    rating_img_url_small: 4,
+                date: "2012-08-10",
+            }
+        ]
+    },
+    {
+        id: 2,
+        title: "Cookbook 2",
+        dateCreation: "2012-07-10",
+        description: "Bla Bla Bla Bla...",
+        rating_img_url_small: 3,
+        feedback: [
+            {
+                title: "Titulo feedback",
+                comment: "This cookbook.",
+		    rating_img_url_small: 4,
+                date: "2012-08-10",
+            }
+        ]
+    },
+{
+        id: 3,
+        title: "Cookbook 3",
+        dateCreation: "2012-07-10",
+        description: "Bla Bla Bla Bla...",
+        rating_img_url_small: 3,
+        feedback: [
+            {
+                title: "Titulo feedback",
+                comment: "This cookbook.",
+		    rating_img_url_small: 4,
+                date: "2012-08-10",
+            }
+        ]
+    }
+]

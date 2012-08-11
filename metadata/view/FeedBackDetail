@@ -1,0 +1,20 @@
+{
+    "id": "ExtBox1-ext-gen32877",
+    "type": "panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "tpl": "{title}</br>\n{comment}</br>\n{rating_img_url_small}</br>\n<div class=\"others\">\n<span class=\"date\">Date: {date:date(\"M d, Y\")}</span>\n</div>\n",
+        "ui": "light",
+        "scrollable": true,
+        "designer|userClassName": "FeedBackDetail",
+        "designer|userAlias": "feedbackdetail"
+    },
+    "customConfigs": [],
+    "designerId": "dd4ee4d9-3949-4abf-9b51-cfb8c18c3867",
+    "$viewOrder": 2,
+    "expanded": true
+}

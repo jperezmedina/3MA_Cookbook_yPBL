@@ -1,0 +1,34 @@
+{
+    "id": "ExtBox1-ext-gen2209",
+    "type": "application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "models": [
+            "FeedBack",
+            "LearningObject",
+            "User"
+        ],
+        "stores": [
+            "FeedbackStore",
+            "LearningObjectStore"
+        ],
+        "views": [
+            "MainNav",
+            "LearningObjectsList",
+            "FeedBackDetail"
+        ],
+        "name": "Cookbool_yPBL",
+        "controllers": [
+            "LearningObjectController"
+        ]
+    },
+    "customConfigs": [],
+    "designerId": "application",
+    "$viewOrder": 0,
+    "iconCls": "icon-application",
+    "expanded": true
+}

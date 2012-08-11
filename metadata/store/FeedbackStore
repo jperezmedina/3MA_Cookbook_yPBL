@@ -1,0 +1,19 @@
+{
+    "id": "ExtBox1-ext-gen15021",
+    "type": "store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": false,
+        "model": "FeedBack",
+        "storeId": "FeedbackStore",
+        "designer|userClassName": "FeedbackStore"
+    },
+    "customConfigs": [],
+    "designerId": "80a9bdcb-84d1-4dab-8635-7fdec8c068a3",
+    "$viewOrder": 0,
+    "expanded": true
+}

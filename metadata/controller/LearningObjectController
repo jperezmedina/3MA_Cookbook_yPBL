@@ -1,0 +1,64 @@
+{
+    "id": "ExtBox1-ext-gen4892",
+    "type": "controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "LearningObjectController"
+    },
+    "customConfigs": [],
+    "designerId": "6bdc92f0-97e3-4c2b-b65e-c3fa0644aa41",
+    "$viewOrder": 0,
+    "expanded": true,
+    "cn": [
+        {
+            "id": "ExtBox1-ext-gen14670",
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "learningobjectsList",
+                "selector": "#learningobjectsList",
+                "xtype": null,
+                "designer|userClassName": "learningobjectsList"
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen15038",
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onListDisclose",
+                "implHandler": [
+                    "\r",
+                    "list.up('navigationview').push({\r",
+                    "    xtype: 'feedbackdetail',\r",
+                    "    data: record.data,\r",
+                    "    title: \"Feedbacks of \" + record.get('title'),\r",
+                    "    comment: record.get('comment'),\r",
+                    "    rank: record.get('rank'),\r",
+                    "    date: record.get('date')\r",
+                    "});"
+                ],
+                "name": "disclose",
+                "designer|targetType": "Ext.dataview.List",
+                "designer|controlQuery": "#learningobjectsList",
+                "designer|userClassName": "onListDisclose"
+            },
+            "customConfigs": [],
+            "expanded": true
+        }
+    ]
+}

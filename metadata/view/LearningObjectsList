@@ -1,0 +1,22 @@
+{
+    "id": "ExtBox1-ext-gen26458",
+    "type": "list",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "height": null,
+        "itemTpl": "<section class=\"LearningObjectListItem\">\n<h2>{title}</h2>\n<div class=\"others\">\n<span class=\"date\">Date Creation: {dateCreation:date(\"M d, Y\")}</span>\n</div>\n<img src=\"{rating_img_url_small}\"/>&nbsp;\n</section>",
+        "loadingText": "Loading Learning Objects...",
+        "store": "LearningObjectStore",
+        "onItemDisclosure": true,
+        "designer|userClassName": "LearningObjectsList",
+        "designer|userAlias": "learningobjectslist"
+    },
+    "customConfigs": [],
+    "designerId": "9238aeb8-e3fe-4100-95a6-8c6930ac6e98",
+    "$viewOrder": 1,
+    "expanded": true
+}
