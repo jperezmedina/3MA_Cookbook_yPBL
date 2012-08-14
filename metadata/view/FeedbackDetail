@@ -1,0 +1,32 @@
+{
+    "type": "panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "FeedbackDetail",
+        "designer|userAlias": "feedbackDetail"
+    },
+    "id": "ExtBox1-ext-gen8458",
+    "designerId": "a1ba116d-133b-40de-b925-6c72f2f90cb0",
+    "cn": [
+        {
+            "type": "template",
+            "reference": {
+                "name": "tpl",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "tpl",
+                "implHandler": [
+                    "Awesome product named: {title}"
+                ],
+                "designer|displayName": "tpl"
+            },
+            "designerId": "bcb1839d-b4f9-4626-804b-d9a0c33a3af3"
+        }
+    ]
+}

@@ -1,0 +1,38 @@
+{
+    "type": "list",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "LearningObjectList",
+        "designer|userAlias": "learningObjectList",
+        "itemId": "learningObjectList",
+        "store": "LearningObject",
+        "onItemDisclosure": true
+    },
+    "id": "ExtBox1-ext-gen8124",
+    "designerId": "ff567da8-0f63-4b52-8d70-4f4c969c166e",
+    "cn": [
+        {
+            "type": "template",
+            "reference": {
+                "name": "itemTpl",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "itemTpl",
+                "implHandler": [
+                    "<h2>{id} {title}</h2>\r",
+                    "<div>{date:date(\"M d, Y\")}</div>\r",
+                    "<img src=\"{ranking_img_url_small}\"/></br>\r",
+                    "<div>{description}</div>"
+                ],
+                "designer|displayName": "itemTpl"
+            },
+            "designerId": "0fe5b015-a89a-4740-bd8b-a3e62cd3dd3c"
+        }
+    ]
+}

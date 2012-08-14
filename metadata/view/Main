@@ -1,0 +1,35 @@
+{
+    "type": "navigationview",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Main",
+        "designer|userAlias": "main",
+        "designer|initialView": true,
+        "scrollable": true
+    },
+    "id": "ExtBox1-ext-gen7260",
+    "designerId": "5fd3b7f4-0c80-4e39-9483-6534039cf846",
+    "cn": [
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "loadingText": "Loading Learning Objects...",
+                "grouped": null,
+                "pinHeaders": null,
+                "preventSelectionOnDisclose": null,
+                "title": "Current Learning Objects"
+            },
+            "designerId": "fc17c665-33f2-4802-968f-07751cceddba",
+            "masterInstanceId": "ExtBox1-ext-gen8124"
+        }
+    ]
+}

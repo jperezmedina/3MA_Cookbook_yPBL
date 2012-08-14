@@ -1,0 +1,45 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "LearningObject",
+        "autoLoad": true,
+        "model": "LearningObject",
+        "storeId": "LearningObject"
+    },
+    "id": "ExtBox1-ext-gen9179",
+    "designerId": "61da6065-9823-4cc6-bd55-abbc02ad1a53",
+    "cn": [
+        {
+            "type": "ajaxproxy",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyAjaxProxy",
+                "url": "resources/json/learningobjects.json"
+            },
+            "designerId": "9dffd38b-972c-4649-81eb-ab5b0d2c2d56",
+            "cn": [
+                {
+                    "type": "jsonreader",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyJsonReader2"
+                    },
+                    "designerId": "157296f8-0005-430b-9910-5989e8ace9b1"
+                }
+            ]
+        }
+    ]
+}

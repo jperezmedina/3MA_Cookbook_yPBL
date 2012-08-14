@@ -1,5 +1,4 @@
 {
-    "id": "ExtBox1-ext-gen5503",
     "type": "datamodel",
     "reference": {
         "name": "items",
@@ -9,13 +8,10 @@
     "userConfig": {
         "designer|userClassName": "LearningObject"
     },
-    "customConfigs": [],
+    "id": "ExtBox1-ext-gen5503",
     "designerId": "08b407e8-57b4-4713-9022-eb1ab63e0457",
-    "$viewOrder": 1,
-    "expanded": true,
     "cn": [
         {
-            "id": "ExtBox1-ext-gen5902",
             "type": "datafield",
             "reference": {
                 "name": "fields",
@@ -23,14 +19,12 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "id",
-                "designer|userClassName": "MyField5"
+                "designer|userClassName": "MyField5",
+                "name": "id"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "482a70a4-8f49-4237-b3cc-ef46aa573404"
         },
         {
-            "id": "ExtBox1-ext-gen6071",
             "type": "datafield",
             "reference": {
                 "name": "fields",
@@ -38,15 +32,13 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "MyField6",
                 "name": "title",
-                "type": "string",
-                "designer|userClassName": "MyField6"
+                "type": "string"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "b32ba8d1-8d38-43b5-bdad-2b206faf79b1"
         },
         {
-            "id": "ExtBox1-ext-gen6505",
             "type": "datafield",
             "reference": {
                 "name": "fields",
@@ -54,16 +46,14 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "MyField7",
                 "dateFormat": "Y-m-d",
                 "name": "dateCreation",
-                "type": "date",
-                "designer|userClassName": "MyField7"
+                "type": "date"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "93ad8870-34d2-4b05-baf7-bfc36587fd15"
         },
         {
-            "id": "ExtBox1-ext-gen6865",
             "type": "datafield",
             "reference": {
                 "name": "fields",
@@ -71,14 +61,12 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "description",
-                "designer|userClassName": "MyField8"
+                "designer|userClassName": "MyField8",
+                "name": "description"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "61753eaf-5f76-48da-9373-1260c69ada43"
         },
         {
-            "id": "ExtBox1-ext-gen7045",
             "type": "datafield",
             "reference": {
                 "name": "fields",
@@ -86,15 +74,26 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "rating_img_url_small",
-                "type": null,
-                "designer|userClassName": "MyField9"
+                "designer|userClassName": "MyField9",
+                "name": "ranking",
+                "type": null
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "9ae9daaa-20f1-47c7-a266-c08ec2158d3c"
         },
         {
-            "id": "ExtBox1-ext-gen7391",
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyField14",
+                "name": "ranking_img_url_small"
+            },
+            "designerId": "30f32eea-4514-461c-b963-724b234bcc90"
+        },
+        {
             "type": "hasmanyassociation",
             "reference": {
                 "name": "hasMany",
@@ -102,12 +101,12 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "MyHasManyAssociation",
                 "model": "FeedBack",
-                "name": "feedbacks",
-                "designer|userClassName": "MyHasManyAssociation"
+                "filterProperty": "id",
+                "name": "feedbacks"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "9e5b8203-1eda-448c-a7b1-f9f2aa5346a4"
         }
     ]
 }

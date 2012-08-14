@@ -1,5 +1,4 @@
 {
-    "id": "ExtBox1-ext-gen4892",
     "type": "controller",
     "reference": {
         "name": "items",
@@ -9,30 +8,10 @@
     "userConfig": {
         "designer|userClassName": "LearningObjectController"
     },
-    "customConfigs": [],
-    "designerId": "6bdc92f0-97e3-4c2b-b65e-c3fa0644aa41",
-    "$viewOrder": 0,
-    "expanded": true,
+    "id": "ExtBox1-ext-gen17294",
+    "designerId": "cbf9c21e-f2dd-480a-a21b-e417c0e42263",
     "cn": [
         {
-            "id": "ExtBox1-ext-gen14670",
-            "type": "controllerref",
-            "reference": {
-                "name": "items",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "ref": "learningobjectsList",
-                "selector": "#learningobjectsList",
-                "xtype": null,
-                "designer|userClassName": "learningobjectsList"
-            },
-            "customConfigs": [],
-            "expanded": true
-        },
-        {
-            "id": "ExtBox1-ext-gen15038",
             "type": "controlleraction",
             "reference": {
                 "name": "listeners",
@@ -40,25 +19,55 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "onListDisclose",
                 "fn": "onListDisclose",
                 "implHandler": [
+                    "var me = this;\r",
                     "\r",
-                    "list.up('navigationview').push({\r",
-                    "    xtype: 'feedbackdetail',\r",
-                    "    data: record.data,\r",
-                    "    title: \"Feedbacks of \" + record.get('title'),\r",
-                    "    comment: record.get('comment'),\r",
-                    "    rank: record.get('rank'),\r",
-                    "    date: record.get('date')\r",
-                    "});"
+                    "if(record){\r",
+                    "\r",
+                    "    var store = Ext.data.StoreManager.lookup('Feedback');\r",
+                    "    \r",
+                    "    store.getProxy().setExtraParams({\r",
+                    "        id: record.get('id'),\r",
+                    "        filter: store.filter('learningObjectId', record.get('id'))\r",
+                    "    });\r",
+                    "    \r",
+                    "    store.load();\r",
+                    "\r",
+                    "    me.getMain().push({\r",
+                    "        xtype:'feedbackList' ,\r",
+                    "        title: 'Feedbacks of ' + record.get('title')\r",
+                    "      \r",
+                    "    });\r",
+                    "    console.log('title:' + record.get('title'));\r",
+                    "    console.log('learningObId:' + record.get('learningObjectId'));\r",
+                    "    console.log('id' + record.get('id'));\r",
+                    "\r",
+                    "}\r",
+                    "\r",
+                    "\r",
+                    "//learningObjectId"
                 ],
                 "name": "disclose",
                 "designer|targetType": "Ext.dataview.List",
-                "designer|controlQuery": "#learningobjectsList",
-                "designer|userClassName": "onListDisclose"
+                "designer|controlQuery": "main learningObjectList"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "09234940-6949-499d-8e59-9c56d3c3eb97"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "main",
+                "ref": "main",
+                "selector": "main"
+            },
+            "designerId": "ab9744d7-19f7-4db4-b7ee-bf91490fb938"
         }
     ]
 }

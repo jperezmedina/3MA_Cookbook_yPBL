@@ -1,5 +1,4 @@
 {
-    "id": "ExtBox1-ext-gen2209",
     "type": "application",
     "reference": {
         "name": "items",
@@ -8,27 +7,27 @@
     "codeClass": null,
     "userConfig": {
         "models": [
-            "FeedBack",
             "LearningObject",
+            "FeedBack",
             "User"
         ],
         "stores": [
-            "FeedbackStore",
-            "LearningObjectStore"
+            "LearningObject",
+            "Feedback"
         ],
         "views": [
-            "MainNav",
-            "LearningObjectsList",
-            "FeedBackDetail"
+            "Main",
+            "LearningObjectList",
+            "FeedbackList",
+            "FeedbackDetail"
         ],
+        "isIconPrecomposed": null,
         "name": "Cookbool_yPBL",
         "controllers": [
-            "LearningObjectController"
+            "LearningObjectController",
+            "FeedbackController"
         ]
     },
-    "customConfigs": [],
-    "designerId": "application",
-    "$viewOrder": 0,
-    "iconCls": "icon-application",
-    "expanded": true
+    "id": "ExtBox1-ext-gen2209",
+    "designerId": "application"
 }

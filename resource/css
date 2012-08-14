@@ -1,0 +1,13 @@
+{
+    "type": "cssresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "url": "resources/css/cookbook_ypbl.css"
+    },
+    "id": "ExtBox1-ext-gen10968",
+    "designerId": "87f4925d-854d-4718-91f4-c97d708d495d"
+}

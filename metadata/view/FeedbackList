@@ -1,0 +1,38 @@
+{
+    "type": "list",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "FeedbackList",
+        "designer|userAlias": "feedbackList",
+        "store": "Feedback",
+        "onItemDisclosure": false,
+        "pinHeaders": false
+    },
+    "id": "ExtBox1-ext-gen8279",
+    "designerId": "d1509cb4-f589-4f60-84c2-453666ee6a81",
+    "cn": [
+        {
+            "type": "template",
+            "reference": {
+                "name": "itemTpl",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "itemTpl",
+                "implHandler": [
+                    "<h2>{id} {title}</h2>",
+                    "<div>{date:date(\"M d, Y\")}</div>",
+                    "<img src=\"{rank_img_url_small}\"/></br>",
+                    "<div>{comment}</div>"
+                ],
+                "designer|displayName": "itemTpl"
+            },
+            "designerId": "c2fe112f-57e8-4c36-aced-085691009469"
+        }
+    ]
+}

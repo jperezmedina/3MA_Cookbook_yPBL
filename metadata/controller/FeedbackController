@@ -1,0 +1,56 @@
+{
+    "type": "controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "FeedbackController"
+    },
+    "id": "ExtBox1-ext-gen5244",
+    "designerId": "5970cac9-9a4a-429f-bb4e-dc1438054b76",
+    "cn": [
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "main",
+                "ref": "main",
+                "selector": "main"
+            },
+            "designerId": "8b5ac39b-56cd-474c-8dee-1c072f851237"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onListItemTap",
+                "fn": "onListItemTap",
+                "implHandler": [
+                    "//var me = this;\r",
+                    "//if(record){\r",
+                    "//    me.getMain().push({\r",
+                    "//          xtype:'feedbackDetail', \r",
+                    "//          title:'Feedback Detail', \r",
+                    "//          id: record.get('id'),\r",
+                    "//          data:record.item[0]\r",
+                    "//            });\r",
+                    "//        }"
+                ],
+                "name": "itemtap",
+                "designer|targetType": "Ext.dataview.List",
+                "designer|controlQuery": "main feedbackList"
+            },
+            "designerId": "f2175c49-5c24-4620-a79a-083c8fe656c7"
+        }
+    ]
+}
